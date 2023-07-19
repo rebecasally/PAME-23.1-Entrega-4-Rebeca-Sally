@@ -7,7 +7,7 @@ export const HeaderDiv = styled.div`
 	position: sticky;
 	display: flex;
 	align-items: center;
-	background-color: ${Colors.Azul};
+	background-color: ${Colors.AzulClaro};
 	color: ${Colors.White};
 	width: 100vw;
 	height: 20vh;
@@ -39,7 +39,16 @@ export const Logo = styled.div`
 	min-height: 60px;
 	min-width: 60px;
 	@media (max-width: 830px) {
-		height: 60px;
-		width: 60px;
+		min-height: 90px;
+		min-width: 90px;
 	}
+`;
+
+export const Menu = styled.div`
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 38vw;
+	height: 100%;
+	margin-left: 30vw;
 `;

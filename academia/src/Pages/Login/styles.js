@@ -14,6 +14,11 @@ export const Background = styled.div`
 	justify-content: center;
 	box-sizing: border-box;
 	flex-direction: column;
+	font-family: sans-serif;
+
+	h1 {
+		color: ${Colors.Roxo};
+	}
 `;
 
 export const MainContainer = styled.div`
@@ -22,10 +27,26 @@ export const MainContainer = styled.div`
 	height: fit-content;
 	min-height: 60vh;
 	display: flex;
-	align-items: center;
-	justify-content: center;
 	margin-top: 10vh;
 	margin-bottom: 20vh;
 	overflow: auto;
 	padding: 10px;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	flex-direction: column;
+	font-family: sans-serif;
+	h3 {
+		color: ${Colors.Roxo};
+		a {
+			color: ${Colors.Roxo};
+		}
+		a:visited {
+			color: ${Colors.Roxo};
+		}
+
+		a:hover {
+			color: ${Colors.AzulClaro};
+		}
+	}
 `;
