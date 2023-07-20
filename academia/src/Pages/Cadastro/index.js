@@ -3,7 +3,7 @@ import { GlobalStyle } from "../../Constants/Theme/styles";
 import { Background, MainContainer } from "./styles";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import Button from "../../Components/Button";
+import { AltButtonDiv } from "../../Components/Button";
 import Input from "../../Components/Input";
 import { Link } from "react-router-dom";
 
@@ -38,7 +38,7 @@ function Cadastro() {
 						onChange={handlePassword}
 						value={password}
 					></Input>
-					<Button title={"Cadastrar"} routes="/Perfil"></Button>
+					<AltButtonDiv title={"Cadastrar"} routes="/Perfil"></AltButtonDiv>
 					<h3>
 						Já possui conta? Faça o <Link to="/Login">Login</Link>
 					</h3>

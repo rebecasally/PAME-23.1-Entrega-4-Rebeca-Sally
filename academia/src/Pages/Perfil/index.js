@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GlobalStyle } from "../../Constants/Theme/styles";
-import { Background, MainContainer } from "./styles";
+import { Background, Imagem, MainContainer, Topo } from "./styles";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import Button from "../../Components/Button";
@@ -22,26 +22,11 @@ function Perfil() {
 		<>
 			<Background>
 				<Header></Header>
+				<Imagem></Imagem>
 				<MainContainer>
-					<h1>Cadastre-se</h1>
-					<Input
-						tipo="text"
-						id="login"
-						content={"Login"}
-						onChange={handleLogin}
-						value={login}
-					></Input>
-					<Input
-						tipo="password"
-						id="password"
-						content={"Senha"}
-						onChange={handlePassword}
-						value={login}
-					></Input>
-					<Button title={"Cadastrar"} routes="/Home"></Button>
-					<h3>
-						Já possui conta? Faça o <Link to="/Login">Login</Link>
-					</h3>
+					<Topo>
+						<h2>Meu Perfil</h2>
+					</Topo>
 				</MainContainer>
 				<Footer></Footer>
 			</Background>

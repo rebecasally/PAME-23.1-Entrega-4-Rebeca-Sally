@@ -10,8 +10,8 @@ export const HeaderDiv = styled.div`
 	background-color: ${Colors.AzulClaro};
 	color: ${Colors.White};
 	width: 100vw;
-	height: 20vh;
-	min-height: 150px;
+	height: 17vh;
+	min-height: 100px;
 	padding: 0;
 	box-shadow: 1px 1px 5px ${Colors.Shadow};
 `;
@@ -19,7 +19,7 @@ export const HeaderDiv = styled.div`
 export const HeaderTitle = styled.div`
 	margin-left: 2vw;
 	text-align: center;
-	font-size: 20px;
+	font-size: 24px;
 	font-family: sans-serif;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -48,7 +48,7 @@ export const Menu = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 38vw;
+	width: 36vw;
 	height: 100%;
 	margin-left: 30vw;
 `;

@@ -3,7 +3,7 @@ import { GlobalStyle } from "../../Constants/Theme/styles";
 import { Background, MainContainer } from "./styles";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
-import Button from "../../Components/Button";
+import { AltButtonDiv } from "../../Components/Button";
 import Input from "../../Components/Input";
 import { Link } from "react-router-dom";
 
@@ -38,7 +38,7 @@ function Login() {
 						onChange={handlePassword}
 						value={login}
 					></Input>
-					<Button title={"Entrar"} routes="/Perfil"></Button>
+					<AltButtonDiv title={"Entrar"} routes="/Perfil"></AltButtonDiv>
 					<h3>
 						Não possui uma conta? Faça o <Link to="/Cadastro">Cadastro</Link>
 					</h3>
