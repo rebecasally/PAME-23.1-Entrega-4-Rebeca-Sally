@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 function Cadastro() {
 	const [login, setLogin] = useState("");
 	const [password, setPassword] = useState("");
+	const [name, setName] = useState("");
 
 	const handleLogin = (event) => {
 		setLogin(event.target.value);
@@ -18,6 +19,12 @@ function Cadastro() {
 	const handlePassword = (event) => {
 		setPassword(event.target.value);
 	};
+	const handleName = (event) => {
+		setName(event.target.value);
+	};
+
+	const user = { nome: name, email: login, senha: password };
+
 	return (
 		<>
 			<Background>
@@ -31,6 +38,7 @@ function Cadastro() {
 						onChange={handleLogin}
 						value={login}
 					></Input>
+					<Input tipo="text" id="name" content={"Nome"} onChange={handleName} value={name}></Input>
 					<Input
 						tipo="password"
 						id="password"

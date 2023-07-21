@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Colors } from "../../Constants/Theme";
-import img from "../../Assets/755298.png";
+import img from "../../Assets/logo1.png";
 
 export const HeaderDiv = styled.div`
 	top: 0;
@@ -26,18 +26,19 @@ export const HeaderTitle = styled.div`
 `;
 
 export const Logo = styled.div`
-	height: 15vh;
-	width: 15vh;
+	height: 10vh;
+	width: 10vh;
 	display: flex;
-	margin-left: 3vw;
+	margin-left: 2vw;
 	align-items: center;
+	border-radius: 20px;
 	justify-content: center;
 	background-image: url(${img});
 	background-repeat: no-repeat;
 	background-size: 90%;
 	background-position: center;
 	min-height: 60px;
-	min-width: 60px;
+	min-width: 100px;
 	@media (max-width: 830px) {
 		min-height: 90px;
 		min-width: 90px;
@@ -50,5 +51,5 @@ export const Menu = styled.div`
 	justify-content: space-between;
 	width: 36vw;
 	height: 100%;
-	margin-left: 30vw;
+	margin-left: 35vw;
 `;

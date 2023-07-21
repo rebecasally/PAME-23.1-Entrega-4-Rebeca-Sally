@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonDiv, AltButton } from "./styles";
+import { ButtonDiv, AltButton, AltButton2 } from "./styles";
 import { GlobalStyle } from "../../Constants/Theme";
 import { Link } from "react-router-dom";
 
@@ -26,3 +26,15 @@ function AltButtonDiv(props) {
 }
 
 export { AltButtonDiv };
+
+function AltButtonDiv2(props) {
+	return (
+		<>
+			<AltButton2>
+				<Link to={props.routes}>{props.title}</Link>
+			</AltButton2>
+		</>
+	);
+}
+
+export { AltButtonDiv2 };

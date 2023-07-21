@@ -31,4 +31,15 @@ export const ButtonDiv = styled.button`
 
 export const AltButton = styled(ButtonDiv)`
 	background-color: ${Colors.AzulClaro};
+	&:hover {
+		color: white;
+		background-color: ${Colors.Roxo};
+	}
+`;
+
+export const AltButton2 = styled(ButtonDiv)`
+	&:hover {
+		color: white;
+		background-color: ${Colors.Roxo};
+	}
 `;

@@ -8,7 +8,7 @@ function Header({ title }) {
 		<>
 			<HeaderDiv>
 				<Logo></Logo>
-				<HeaderTitle>Academia da Flávia</HeaderTitle>
+				<HeaderTitle>COLOR GYM</HeaderTitle>
 				<Menu>
 					<Button title={"Home"} routes="/Home"></Button>
 					<Button title={"Perfil"} routes="/Perfil"></Button>

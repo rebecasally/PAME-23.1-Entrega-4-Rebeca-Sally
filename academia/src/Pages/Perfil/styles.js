@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Colors } from "../../Constants/Theme";
-import imagem from "../../Assets/atleta-feminina-feliz-ajustando-a-maquina-de-remo-e-ouvindo-musica-em-fones-de-ouvido-durante-o-treinamento-esportivo-em-uma-academia.jpg";
+import imagem from "../../Assets/img2.jpg";
 
 export const Background = styled.div`
 	margin: 0;
@@ -28,29 +28,36 @@ export const Imagem = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: linear-gradient(to right, rgba(34, 34, 34, 0.299), rgba(21, 0, 92, 1.2)),
+	background-image: linear-gradient(
+			to right,
+			rgba(34, 34, 34, 0),
+			rgba(34, 34, 34, 0.429),
+			${Colors.Gradiente}
+		),
 		url(${imagem});
 	background-repeat: no-repeat;
 	background-size: 100%;
-	background-position: top;
+	background-position: center;
 `;
 
 export const MainContainer = styled.div`
 	width: 70%;
 	background-color: ${Colors.White};
 	height: fit-content;
-	min-height: 60vh;
+	min-height: 450px;
 	display: flex;
 	margin-top: 10vh;
 	margin-bottom: 20vh;
 	overflow: auto;
 	align-items: center;
-	justify-content: center;
+	justify-content: start;
 	gap: 20px;
 	flex-direction: column;
 	font-family: sans-serif;
+	border-radius: 10px;
+	box-shadow: 2px 3px 10px ${Colors.Shadow};
 	h3 {
-		color: ${Colors.Roxo};
+		color: ${Colors.RoxoEscuro};
 		a {
 			color: ${Colors.Roxo};
 		}
@@ -68,7 +75,6 @@ export const Topo = styled.div`
 	display: flex;
 	align-items: center;
 	width: 100%;
-	margin-top: -45vh;
 	background-color: ${Colors.Roxo};
 	color: ${Colors.White};
 	height: 15vh;

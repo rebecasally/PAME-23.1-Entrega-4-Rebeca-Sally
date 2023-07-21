@@ -18,6 +18,9 @@ function Login() {
 	const handlePassword = (event) => {
 		setPassword(event.target.value);
 	};
+
+	const user = { email: login, senha: password };
+
 	return (
 		<>
 			<Background>

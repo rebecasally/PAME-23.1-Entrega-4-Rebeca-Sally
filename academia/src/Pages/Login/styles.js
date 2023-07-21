@@ -36,6 +36,8 @@ export const MainContainer = styled.div`
 	gap: 20px;
 	flex-direction: column;
 	font-family: sans-serif;
+	border-radius: 10px;
+	box-shadow: 2px 3px 10px ${Colors.Shadow};
 	h3 {
 		color: ${Colors.Roxo};
 		a {
